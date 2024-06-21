@@ -3,7 +3,7 @@ CC := g++
 CFLAGS := -Wall
 INCLUDE := -I $(wildcard ./external/*/include/)
 LIBS := -L$(wildcard ./external/*/lib)
-LIBS += -lraylib
+LIBS += -l:libraylib.a
 
 BUILD := build
 SRC := src
